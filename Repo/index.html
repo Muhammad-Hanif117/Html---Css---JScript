@@ -2,8 +2,57 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Hanif" content="Belajar Html" />
+    <meta name="Edukasi" content="Deskip">
+    <!--* Interanl CSS-->
+    <style>
+      .a
+      {
+        color: rgb(233, 209, 30);font-size:medium;
+      }
+      .b{
+        font-size: xx-large;
+      }
+      /*Atribute Selector**/
+      a[class]
+      {
+        background-color: rgb(255, 0, 0);
+      }
+
+      a[class = "a"]
+      {
+        background-color: blue;
+      }
+      /*1 Kata*/
+      [class |= "z x"]
+      {
+        color: rebeccapurple;
+      }
+
+      [class ~= "z x"]
+      {
+        color: rebeccapurple;
+      }
+      [class ^= "z x"]
+      {
+        color: rebeccapurple;
+      }
+      [class $= "z x"]
+      {
+        color: rebeccapurple;
+      }
+      [class *= "z x"]
+      {
+        color: rebeccapurple;
+      }
+
+      /**Selector List*/
+      .a,.b
+      {font-style: italic;}
+    </style>
     <title>Document</title>
+    
+    <link rel="icon" href="profiel.png">
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,9 +65,9 @@
   <script src="https://unpkg.com/feather-icons"></script>
 </html>
     <link rel="stylesheet" href="CSS/interface.css" />
+    <!--<link rel="import" href="http://127.0.0.1:5500/Kelas_Kompuet_Online/html_learn_kls_komputer_Online.html">-->
   </head>
   <body>
-    <nav>
             <!-- example icon 
             <i data-feather="circle"></i> -->
         
@@ -26,12 +75,41 @@
               feather.replace();
             </script>
       <nav class="navbar">
-
+        <text_navbar class="navnav"> italic</text_navbar>
+        <text_navbar class="navnav"> text</text_navbar>
       </nav>
-    </nav>
+      
     <div>
-      <b>aku adalah muhamad hanif<br>kelas sepuluh rpl 2<br>
-      aku suka makan<br>saya tinggal di kota</b>
+      <p class = "a">
+        <a href="http://127.0.0.1:5500/Kelas_Kompuet_Online/html_learn_kls_komputer_Online.html#p" target="_self">id</a>
+        broo <!-- *Entity--> &#59
+      </p>
+      <p><a class = "a">
+        <pre>aku adalah muhamad hanif</pre>
+        aku adalah muhamad hanif<br>
+        kelas sepuluh rpl 2<br>
+        aku suka makan<br></a>
+        <!--* Multi Play Class-->
+        <a class="a b">saya tinggal di kota tanggerang</a>
+        <hr>
+      </p>
+      <p style="color: white;font-size: medium;">
+        <!-- *Formstting Tag-->
+        Ada para maniak<sup style="font-size: small;">2</sup> game
+      </p>
+      <ul style="padding: 20px;">
+        <li><ins>Lorem</ins> ipsum laudantium</li>
+        <li>amet consectetur adipisicing elit</li>
+        <li>Impedit voluptates rem debitis est</li>
+      </ul>
+     
+      <ol style="padding: 20px;" type="A">
+        <li><ins><del>Lorem</del></ins> ipsum laudantium</li>
+        <li>amet consectetur adipisicing elit</li>
+        <li>Impedit voluptates rem debitis est</li>
+      </ol>
+
+      
     </div>
   </body>
 </html>
